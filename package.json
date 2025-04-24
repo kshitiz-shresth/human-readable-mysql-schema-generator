@@ -1,6 +1,6 @@
 {
   "name": "human-readable-mysql-schema-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A tool to generate a human-readable MySQL database schema in a text file",
   "main": "src/index.js",
   "scripts": {
