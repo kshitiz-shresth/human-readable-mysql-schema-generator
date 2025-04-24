@@ -1,0 +1,34 @@
+{
+  "name": "human-readable-mysql-schema-generator",
+  "version": "1.0.1",
+  "description": "A tool to generate a human-readable MySQL database schema in a text file",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "schema",
+    "database",
+    "human-readable"
+  ],
+  "author": "kshitiz-shresth",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^3.11.0",
+    "prompts": "^2.4.2",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "human-readable-mysql-schema-generator": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshitiz-shresth/human-readable-mysql-schema-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kshitiz-shresth/human-readable-mysql-schema-generator/issues"
+  },
+  "homepage": "https://github.com/kshitiz-shresth/human-readable-mysql-schema-generator#readme"
+}
