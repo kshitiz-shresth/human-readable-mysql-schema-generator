@@ -5,7 +5,7 @@ A Node.js package to generate a human-readable MySQL database schema in a text f
 ## Installation
 
 ```bash
-npm install -g human-readable-mysql-schema
+npm install -g human-readable-mysql-schema-generator
 ```
 
 ## Usage
@@ -15,13 +15,13 @@ npm install -g human-readable-mysql-schema
 Run the command to generate a schema file. If you don’t provide flags, you’ll be prompted for inputs:
 
 ```bash
-human-readable-mysql-schema [--host <host>] [--port <port>] [--user <user>] [--password <password>] [--database <database>] [--output <file>]
+human-readable-mysql-schema-generator [--host <host>] [--port <port>] [--user <user>] [--password <password>] [--database <database>] [--output <file>]
 ```
 
 Example (interactive mode):
 
 ```bash
-human-readable-mysql-schema
+human-readable-mysql-schema-generator
 ```
 
 You’ll be prompted:
@@ -37,7 +37,7 @@ Enter MySQL database name: convoaidb
 Example (with flags):
 
 ```bash
-human-readable-mysql-schema --host localhost --port 3306 --user root --password "" --database convoaidb --output schema.txt
+human-readable-mysql-schema-generator --host localhost --port 3306 --user root --password "" --database convoaidb --output schema.txt
 ```
 
 ### Programmatic Usage
@@ -46,7 +46,7 @@ Provide a MySQL connection object (e.g., from `mysql2`, installed separately):
 
 ```javascript
 const mysql = require("mysql2/promise");
-const { exportSchema } = require("human-readable-mysql-schema");
+const { exportSchema } = require("human-readable-mysql-schema-generator");
 
 async function run() {
   const connection = await mysql.createConnection({
