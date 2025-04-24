@@ -65,6 +65,29 @@ async function run() {
 run();
 ```
 
+## Generated Output Example
+
+The generated `schema_readable.txt` file will look like this for a sample database:
+
+```
+🗂️ Table: users
+Columns:
+  - id: int primary key auto_increment
+  - username: varchar(50) not null
+  - email: varchar(100)
+  - created_at: timestamp
+Relationships:
+  - None
+
+🗂️ Table: orders
+Columns:
+  - order_id: int primary key auto_increment
+  - user_id: int not null
+  - created_at: timestamp
+Relationships:
+  - user_id references id in table users [onDelete(CASCADE)]
+```
+
 ## Requirements
 
 - Node.js >= 14
